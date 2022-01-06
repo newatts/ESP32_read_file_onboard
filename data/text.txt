@@ -1,1 +1,1 @@
-ginnerish.
+for testing of file reading - gibberish. 
