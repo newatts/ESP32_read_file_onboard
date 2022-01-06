@@ -20,6 +20,7 @@
 
 void readAnotherFileOnESP(void); 
 void joinWifiNetwork(void);
+void lights(void);
 
  
 // Create AsyncWebServer object on port 80
@@ -196,6 +197,9 @@ void setup(){
           digitalWrite(ledPin, LOW);
           request->send(SPIFFS, "/index.html", "text/html", false, processor);
         });
+
+      
+
         server.begin();
       }
       else {
@@ -264,11 +268,17 @@ void setup(){
 
 }
 
-
 void loop() {
 
-Serial.println("in loop");
-delay(1000000);
+//Serial.println("in loop");
+ /*  for(byte i=0; i<5; i++){
+            digitalWrite(ledPin, HIGH);
+            delay(5);
+            digitalWrite(ledPin, LOW);
+            Serial.println("on/off");
+            //digitalWrite(ledPin, HIGH)
+          } */
+//delay(10000);
 
 }
 

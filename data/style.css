@@ -107,3 +107,9 @@ html {
   .button-off:hover {
     background-color: #252524;
   } 
+  .button-other {
+    background-color: #858000;
+  }
+  .button-other:hover {
+    background-color: #760000;
+  } 
